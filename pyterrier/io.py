@@ -126,7 +126,7 @@ def ok_filename(fname) -> bool:
             return False
     return True
 
-def touch(fname, mode=0o666, dir_fd=None, **kwargs):
+def touch(fname, mode=0o600, dir_fd=None, **kwargs):
     """
     Eqiuvalent to touch command on linux.
     Implementation from https://stackoverflow.com/a/1160227
